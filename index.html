@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de Turing - Dainer Florian</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="img/peppo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel='stylesheet' href='style.css'>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Máquina de Turing
+            <div class="line"></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contenido">¿Qué es?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#componentes">Componentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tipos">Tipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ejemplo">Ejemplo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bibliografia">Bibliografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <header class="jumbotron text-center">
+        <h1 class="display-4">Introducción a la Máquina de Turing</h1>
+        <p class="lead">Pilar de la teoría de la computabilidad e inteligencia artificial.</p>
+    </header>
+
+    <!-- Sección de contenido -->
+    <section id="contenido" class="container my-5">
+        <h2 class="text-center">¿Qué es una Máquina de Turing?</h2>        
+        <div class="line"></div>
+        <p class="text-justify">            
+            La Máquina de Turing es uno de los conceptos fundamentales en la teoría de la computación, propuesto por el matemático británico Alan Turing en 1936. 
+            Este modelo matemático de computación ha sido esencial para el desarrollo de la informática, se comporta como un autómata finito que dispone de una 
+            cinta de longitud infinita en la que se pueden leer, escribir o borrar símbolos. Ha sentado las bases para entender la naturaleza de los algoritmos y la computabilidad. 
+            A pesar de su simplicidad, la Máquina de Turing es extremadamente poderosa y puede simular cualquier algoritmo computacionalmente ejecutable. <br><br>
+            La Máquina de Turing, son modelos computacionales abstractos de gran potencia, equivalentes a las computadoras modernas,
+            la cual ha sido de gran importancia para sentar las bases de la informática moderna. Formalmente una Maquina de Turing puede definirse como una sex-tupla: <b>M= (ɼ, β, Q, δ, s, h)</b>.
+            Dónde:
+        </p>
+        <p class="text-justify">
+            <div class="d-flex justify-content-center">
+                <ul>
+                    <li><b>ɼ:</b> es el alfabeto de la cinta.</li>
+                    <li><b>β:</b> es el símbolo en blanco de la cinta.</li>
+                    <li><b>Q:</b> conjunto de estados de la máquina.</li>
+                    <li><b>δ:</b> es la función de transición.</li>
+                    <li><b>h:</b> es el estado final de la máquina.</li>
+                </ul>
+            </div>
+        </p>
+    </section>
+
+    <!-- Sección de componentes -->
+    <section id="componentes" class="container my-5">
+        <h2 class="text-center">Componentes de la Máquina de Turing.</h2>
+        <div class="line"></div>
+        <p class="text-justify">
+            Este modelo matemático es un autómata capaz de resolver cualquier problema que pueda ser descrito por un algoritmo que consta de ciertos componentes para lograr su funcionamiento, 
+            estos son:
+        </p>
+        <p class="text-justify">
+            <div class="d-flex justify-content-center">
+                <ul>
+                    <li><b>Cinta:</b> Una cinta infinita dividida en celdas, capaz de almacenar un símbolo de un conjunto finito. 
+                        Esa cinta es considerada la memoria de la máquina debido a que almacena los datos y as u vez se realizan operaciones. 
+                    </li>
+                    <li><b>Cabezal:</b> El cabezal es de lectura/escritura que se mueve a lo largo de la cinta, leyendo y escribiendo símbolo. 
+                        Este componente es el encargado de interactuar con la memoria de la máquina.
+                    </li>
+                    <li><b>Estado:</b> La máquina se encuentra en uno de un conjunto finito de estados, cada estado representa una configuración 
+                        específica de la máquina en un momento determinado de su ejecución.
+                    </li>
+                    <li><b>Tabla de transición:</b> La tabla de transiciones define las reglas de comportamiento que la máquina debe realizar en 
+                        función del estado actual, el símbolo leído y el nuevo símbolo que se escribe. Es considerada el cerebro de la máquina debido 
+                        a que determina su comportamiento.
+                    </li>
+                </ul>
+            </div>
+        </p>
+    </section>
+
+    <!-- Sección de tipos -->
+    <section id="tipos" class="container my-5">
+        <h2 class="text-center">Tipos de Máquina de Turing.</h2>
+        <div class="line"></div>
+        <p class="text-justify">
+            Este modelo matemático es un autómata capaz de resolver cualquier problema que pueda ser descrito por un algoritmo que consta de ciertos componentes para lograr su funcionamiento, 
+            estos son:
+        </p>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="dtm">Máquina de Turing Determinista (DTM):</label>
+                            <ul id="dtm">                    
+                                <li>Es el modelo estándar de la Máquina de Turing.</li>
+                                <li>Para cada combinación de estado y símbolo, existe una única transición posible.</li>
+                                <li>Su comportamiento es completamente predecible y determinista.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <label for="ntm">Máquina de Turing No Determinista (NTM):</label>
+                            <ul id="ntm">                    
+                                <li>Permite múltiples transiciones posibles para una misma combinación de estado y símbolo.</li>
+                                <li>Puede explorar varias ramas de computación simultáneamente.</li>
+                                <li>Si alguna rama lleva a un estado de aceptación, la NTM acepta la cadena de entrada.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="utm">Máquina de Turing Universal (UTM):</label>
+                            <ul id="utm">                    
+                                <li>Es una Máquina de Turing que puede simular el comportamiento de cualquier otra Máquina de Turing.</li>
+                                <li>Recibe como entrada la descripción de una Máquina de Turing y una cadena, y simula el comportamiento de esa máquina con esa cadena.</li>
+                                <li>Demuestra que existe un algoritmo capaz de ejecutar cualquier otro algoritmo computable.</li>
+                            </ul>                
+                        </td>
+                        <td>
+                            <label for="otm">Máquina de Turing con Oráculo (OTM):</label>
+                            <ul id="otm">                    
+                                <li>Es una Máquina de Turing equipada con un oráculo, que es una caja negra capaz de responder preguntas de manera instantánea.</li>
+                                <li>El oráculo puede resolver problemas que no son computables por una Máquina de Turing estándar.</li>
+                                <li>Se utiliza para estudiar la relación entre diferentes clases de complejidad computacional.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ptm">Máquina de Turing Probabilística (PTM):</label>
+                            <ul id="ptm">                    
+                                <li>Introduce probabilidades en las transiciones de la Máquina de Turing.</li>
+                                <li>Cada transición tiene una probabilidad asociada, y la máquina toma decisiones basadas en estas probabilidades.</li>
+                                <li>Se utiliza para modelar algoritmos probabilísticos y estudiar clases de complejidad probabilística.</li>
+                            </ul>                
+                        </td>
+                        <td>
+                            <label for="atm">Máquina de Turing Alternante (ATM):</label>
+                            <ul id="atm">                    
+                                <li>Combina características de las Máquinas de Turing Determinista y No Determinista.</li>
+                                <li>Los estados se dividen en estados existenciales y universales.</li>
+                                <li>En los estados existenciales, basta con que una rama lleve a la aceptación, mientras que, en los estados universales, todas las ramas deben llevar a la aceptación.</li>
+                                <li>Se utiliza para estudiar clases de complejidad alternantes y problemas de decisión.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Sección de ejemplo -->
+    <section id="ejemplo" class="container my-5">
+        <h2 class="text-center">Ejemplo de aplicación de la Máquina de Turing.</h2>
+        <div class="line"></div>
+        <p class="text-justify">            
+            Se diseña una Máquina de Turing que sea capaz de determinar si una cadena binaria 
+            (compuesta por ceros ‘0’ y ‘1’) es divisible por 3. La máquina aceptará la cadena si 
+            contiene números divisibles por 3, y la rechazará si el número no logra ser divisible por 3.
+        </p>
+        <div class="img">
+            <img id="ejemplo" src="img/ejemplo.png" alt="Ejemplo Máquina de Turing">
+            <span class="img-span" for="ejemplo">Ejemplo Máquina de Turing.</span>
+        </div>
+        <p class="text-justify">
+            <div class="">
+                <h4 for="estados">Estados:</h4>
+                <ul id="estados">
+                    <li><b>q0:</b> El estado q0 es el estado inicial.</li>
+                    <li><b>q1 y q2:</b> Los esados q1 y q2 son estados intermedios de balanceo.</li>
+                    <li><b>qf:</b> El estado qf es el estado final o de aceptación.</li>
+                </ul>
+            </div>
+        </p>
+        <h4 for="table">Transiciones.</h4>
+        <div>
+            <center>
+                <table class="transiciones table2">
+                    <thead>
+                        <tr>
+                            <th>Estado Actual</th>
+                            <th>Símbolo Actual</th>
+                            <th>Nuevo Símbolo</th>
+                            <th>Movimiento</th>
+                            <th>Nuevo Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="idx">q0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Derecha</td>
+                            <td>q0</td>
+                        </tr>
+                        <tr>
+                            <td class="idx">q0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Derecha</td>
+                            <td>q1</td>
+                        </tr>
+                        <tr>
+                            <td class="idx">q0</td>
+                            <td>B</td>
+                            <td>B</td>
+                            <td>Derecha</td>
+                            <td>qf</td>
+                        </tr>
+                        <tr>
+                            <td class="idx">q1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Derecha</td>
+                            <td>q2</td>
+                        </tr>
+                        <tr>
+                            <td class="idx">q1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Derecha</td>
+                            <td>q0</td>
+                        </tr>
+                        <tr>
+                            <td class="idx">q2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>Derecha</td>
+                            <td>q1</td>
+                        </tr>
+                        <tr>
+                            <td class="idx">q2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Derecha</td>
+                            <td>q2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>            
+        </div>
+        <div>
+            <br><h4 for="descripción">Descripción del funcionamiento.</h4>
+            <ol id="descripción">
+                <li>La máquina comienza en el estado q0.</li>
+                <li>Si el cabezal lee un '1', la máquina cambia al estado q1 y se mueve a la derecha.</li>
+                <li>Si lee un '0', la máquina permanece en el estado q0 y se mueve a la derecha.</li>
+                <li>Si encuentra un espacio en blanco (B), la máquina cambia al estado qf, indicando que la cadena está vacía o ha finalizado.</li>
+                <li>En el estado q1, si lee un '0', cambia al estado q2 y se mueve a la derecha.</li>
+                <li>Si lee un '1', regresa al estado q0 y se mueve a la derecha.</li>
+                <li>En el estado q2, si lee un '0', regresa al estado q1 y se mueve a la derecha.</li>
+                <li>Si lee un '1', permanece en el estado q2 y se mueve a la derecha.</li>
+            </ol>
+        </div>
+        <div>
+            <br><h4 for="funcionamiento">Ensayo con binario 110:</h4>
+            <p id="funcionamiento">
+                Veamos el funcionamiento con la cadena de binarios 110, en decimal 6.
+            </p>
+            <ul>
+                <li>La máquina comienza en el estado q0.</li><br>
+                <img class="img" src="img/q0.png">
+                <br>
+                <li>El cabezal lee un '1', haciendo que la máquina cambie al estado q1 y se mueve a la derecha.</li><br>
+                <img class="img" src="img/q1.png">
+                <br>
+                <li>En el estado q1, el cabezal lee un '1', regresa al estado q0 y se mueve a la derecha.</li><br>
+                <img class="img" src="img/q0.png">
+                <br>
+                <li>En el estado q0, el cabezal lee un espacio en blanco (B, presentado en el programa como un ‘□’), haciendo que la máquina 
+                    cambie al estado final de aceptación qf y se mueve a la derecha.</li><br>
+                <img class="img" src="img/qf.png"><br>
+                <img class="img-final" src="img/qf_process.png">
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de bibliografia -->
+    <section id="bibliografia" class="container my-5">
+        <h2 class="text-center">Bibliografía.</h2>
+        <div class="line"></div>
+        <div class="d-flex justify-content-center">
+            <ul class="biblio">
+                <li><a target="_blank" href="http://www.revistasbolivianas.ciencia.bo/scielo.php?lng=es&pid=S2415-23232016000100004&script=sci_arttext">Máquinas de Turing y sus aplicaciones.</a></li>
+                <li><a target="_blank" href="https://lamaquinaoraculo.com/ciencias-computacion/la-maquina-de-turing/">La Máquina de Turing.</a></li>
+                <li><a target="_blank" href="https://bootcampai.medium.com/m%C3%A1quinas-de-turing-c329ccc270f">Máquinas de Turing.</a></li>
+                <li><a target="_blank" href="https://deepai.org/machine-learning-glossary-and-terms/turing-machine">Turing Machines.</a></li>
+                <li><a target="_blank" href="https://formatalent.com/que-es-una-maquina-de-turing-y-como-funciona/">¿Qué es una máquina de Turing y cómo funciona?</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=Ey-LNQ6Bvlo">Vídeo: Máquinas de Turing: Ejemplos.</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center">Envíanos tu opinión.</h2>
+        <form method="GET">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <button id="send" type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Dainer S. Florian Arroyo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón para regresar arriba -->
+    <button onclick="topFunction()" id="btnArriba" class="btn btn-primary" title="Regresar arriba">↑</button>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
